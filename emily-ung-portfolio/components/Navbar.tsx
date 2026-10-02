@@ -21,7 +21,7 @@ const Navbar = ({ title }: NavbarProps) => {
     <header className="bg-surface">
       {/* <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4"> */}
       <nav className="flex items-center justify-between ml-10 px-6 py-8">
-        <Link className="text-rainbow font-heading text-4xl" href="/">
+        <Link className="text-rainbow font-accent text-4xl" href="/">
           {title}
         </Link>
       </nav>
