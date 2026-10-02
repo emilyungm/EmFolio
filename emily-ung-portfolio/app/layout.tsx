@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono, Capriola, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import Navbar from "@/components/Navbar";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -42,7 +43,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         jetbrainsMono.variable,
       )}
     >
-      <body className="min-h-full flex flex-col bg-surface">{children}</body>
+      <body className="min-h-full flex flex-col bg-surface">
+        <Navbar title={metadata.title} />
+        {children}
+      </body>
     </html>
   );
 }

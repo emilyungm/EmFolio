@@ -1,5 +1,3 @@
-import { metadata } from "./layout";
-import Navbar from "../components/Navbar";
 import GradientWaves from "../components/GradientWaves";
 
 export default function Home() {
@@ -32,7 +30,6 @@ export default function Home() {
           <h1 className="">Hi! I'm Emily :)</h1>
         </div>
       </div>
-      <Navbar title={metadata.title} />
       <main className="grid min-h-[80vh] grid-cols-2 items-center px-[10em]">
         <div className="w-10/12">
           <h1 className="font-heading text-ink drop-shadow-md text-6xl">
