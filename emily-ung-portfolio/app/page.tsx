@@ -26,25 +26,38 @@ export default function Home() {
           mouseInteraction={false}
           parallaxStrength={0.5}
         />
-        <div>
-          <h1 className="">Hi! I'm Emily :)</h1>
-        </div>
       </div>
-      <main className="grid min-h-[80vh] grid-cols-2 items-center px-[10em]">
-        <div className="w-10/12">
+      <main className="grid min-h-[80vh] grid-cols-2 items-center gap-10 px-[10em]">
+        <div className="w-10/12  flex-col justify-center">
           <h1 className="font-heading text-ink drop-shadow-md text-6xl">
-            Hi, I'm Emily :D Welcome to my portfolio!
+            Hi, I&apos;m Emily :D
           </h1>
+          <h2 className="mt-4 font-heading text-ink drop-shadow-md text-5xl">
+            Welcome to my portfolio!
+          </h2>
           <p className="mt-4 text-2xl text-ink drop-shadow-md">
-            I graduated fron Monash University in 2025 with a Bachelor of
+            I graduated from Monash University in 2025 with a Bachelor of
             Computer Science, and am currently working as an Engineering
             Graduate at the Commonwealth Bank of Australia.
             <br />
-            Come take a look at what I've been up to!
+            Come take a look at what I&apos;ve been up to!
           </p>
         </div>
-        <div className="w-10/12">
+        <div className="w-10/12 flex-col items-center">
           <p className="mt-4 text-xl text-ink drop-shadow-md">placeholder</p>
+          {/* <h1 className="font-heading text-ink drop-shadow-md text-6xl">
+            Hi, I&apos;m Emily :D
+          </h1>
+          <h2 className="mt-4 font-heading text-ink drop-shadow-md text-5xl">
+            Welcome to my portfolio!
+          </h2>
+          <p className="mt-4 text-2xl text-ink drop-shadow-md">
+            I graduated from Monash University in 2025 with a Bachelor of
+            Computer Science, and am currently working as an Engineering
+            Graduate at the Commonwealth Bank of Australia.
+            <br />
+            Come take a look at what I&apos;ve been up to!
+          </p> */}
         </div>
       </main>
     </>
