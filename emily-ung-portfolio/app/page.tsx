@@ -27,7 +27,7 @@ export default function Home() {
           parallaxStrength={0.5}
         />
       </div>
-      <main className="grid min-h-[80vh] grid-cols-2 items-center gap-10 px-[10em]">
+      <main className="grid flex-1 grid-cols-2 items-center gap-10 px-[10em]">
         <div className="w-10/12  flex-col justify-center">
           <h1 className="font-heading text-ink drop-shadow-md text-6xl">
             Hi, I&apos;m Emily :D
