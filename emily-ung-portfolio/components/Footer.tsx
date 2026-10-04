@@ -2,7 +2,7 @@
 
 import { ContactInfoFields } from "@/app/layout";
 import { TbBrandGithub, TbBrandLinkedin, TbMail } from "react-icons/tb";
-import IconButton from "./IconButton";
+import IconButtonLink from "./IconButtonLink";
 
 interface FooterProps {
   authorName: string;
@@ -20,27 +20,30 @@ const Footer = ({ authorName, contactInfo }: FooterProps) => {
       </div>
       <div className="flex justify-end  gap-5">
         {contactInfo.email && (
-          <IconButton
+          <IconButtonLink
             icon={TbMail}
+            href={`mailto:${contactInfo.email}`}
+            label="Send an email to Emily"
             size={iconButtonSize}
             color={iconButtonColor}
-            href={`mailto:${contactInfo.email}`}
           />
         )}
         {contactInfo.linkedinLink && (
-          <IconButton
+          <IconButtonLink
             icon={TbBrandLinkedin}
+            href={contactInfo.linkedinLink}
+            label="Open Emily's LinkedIn Profile in a new tab"
             size={iconButtonSize}
             color={iconButtonColor}
-            href={contactInfo.linkedinLink}
           />
         )}
         {contactInfo.githubLink && (
-          <IconButton
+          <IconButtonLink
             icon={TbBrandGithub}
+            href={contactInfo.githubLink}
+            label="Open Emily's GitHub Profile in a new tab"
             size={iconButtonSize}
             color={iconButtonColor}
-            href={contactInfo.githubLink}
           />
         )}
       </div>

@@ -2,24 +2,27 @@
 
 import { IconType } from "react-icons";
 
-interface IconButtonProps {
+interface IconButtonLinkProps {
   icon: IconType;
-  href?: string;
+  href: string;
+  label: string;
   openInNewTab?: boolean;
   size?: number;
   color?: string;
 }
 
-const IconButton = ({
+const IconButtonLink = ({
   icon: Icon,
   href,
+  label,
   openInNewTab = true,
   size = 50,
   color = "text-ink",
-}: IconButtonProps) => {
+}: IconButtonLinkProps) => {
   return (
     <a
       href={href}
+      aria-label={label}
       className={`${color}`}
       target={openInNewTab ? "_blank" : undefined}
     >
@@ -28,4 +31,4 @@ const IconButton = ({
   );
 };
 
-export default IconButton;
+export default IconButtonLink;
