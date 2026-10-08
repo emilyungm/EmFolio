@@ -74,14 +74,17 @@ const roles = [
   {
     company: "Monash University",
     jobRoles: [bachelorsDegreeExperience],
+    companyLinkedIn: "https://www.linkedin.com/school/monash-university/home/",
   },
   {
     company: "Computing and Commerce Association (CCA)",
     jobRoles: [ccaHrDirector, ccaHrOfficer],
+    companyLinkedIn: "https://www.linkedin.com/company/ccamonash/home/",
   },
   {
     company: "Monash AIM (Analysis of Images in Medicine)",
     jobRoles: [monashAim],
+    companyLinkedIn: "https://www.linkedin.com/company/monash-aim/home/",
   },
 ];
 
@@ -110,7 +113,7 @@ export default function EducationPage() {
         <span className="mt-3 block h-1.5 w-32 rounded-full bg-rainbow-gradient" />
 
         <div className="mt-8">
-          {roles.map(({ company, jobRoles }, i) => (
+          {roles.map(({ company, jobRoles, companyLinkedIn }, i) => (
             <Fragment key={company}>
               {i > 0 && (
                 <div
@@ -118,7 +121,11 @@ export default function EducationPage() {
                   className="my-6 h-1 rounded-full bg-rainbow-gradient"
                 />
               )}
-              <ExperienceTimelineCard company={company} jobRoles={jobRoles} />
+              <ExperienceTimelineCard
+                company={company}
+                jobRoles={jobRoles}
+                companyLinkedIn={companyLinkedIn}
+              />
             </Fragment>
           ))}
         </div>

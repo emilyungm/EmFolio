@@ -11,6 +11,7 @@ export interface JobRoleExperience {
 
 interface ExperienceTimelineCardProps {
   company: string;
+  companyLinkedIn: string;
   jobRoles: JobRoleExperience[];
 }
 
@@ -21,6 +22,7 @@ const dateOptions: Intl.DateTimeFormatOptions = {
 
 const ExperienceTimelineCard = ({
   company,
+  companyLinkedIn,
   jobRoles,
 }: ExperienceTimelineCardProps) => {
   // most recent start date first
@@ -30,7 +32,11 @@ const ExperienceTimelineCard = ({
 
   return (
     <div className="font-commissioner rounded-2xl text-ink bg-secondary-foreground p-6 sm:p-8">
-      <h2 className="text-3xl font-semibold">{company}</h2>
+      <a href={companyLinkedIn} target={"_blank"}>
+        <h2 className="text-3xl font-semibold underline underline-offset-4 decoration-2">
+          {company}
+        </h2>
+      </a>
 
       {/* timeline line */}
       <div className="text-surface mt-6 ml-3 space-y-6 border-l-2 border-primary pl-6">

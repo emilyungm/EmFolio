@@ -67,8 +67,13 @@ const companies = [
   {
     company: "Commonwealth Bank of Australia",
     jobRoles: [cbaInternExperience, cbaGradExperience],
+    companyLinkedIn: "https://www.linkedin.com/company/commonwealthbank/home/",
   },
-  { company: "Leidos Australia", jobRoles: [leidosInternExperience] },
+  {
+    company: "Leidos Australia",
+    jobRoles: [leidosInternExperience],
+    companyLinkedIn: "https://www.linkedin.com/company/leidos-australia/home/",
+  },
 ];
 
 export default function WorkExperiencePage() {
@@ -97,7 +102,7 @@ export default function WorkExperiencePage() {
           <span className="mt-3 block h-1.5 w-32 rounded-full bg-rainbow-gradient" />
 
           <div className="mt-8">
-            {companies.map(({ company, jobRoles }, i) => (
+            {companies.map(({ company, jobRoles, companyLinkedIn }, i) => (
               <Fragment key={company}>
                 {i > 0 && (
                   <div
@@ -105,7 +110,11 @@ export default function WorkExperiencePage() {
                     className="my-6 h-1 rounded-full bg-rainbow-gradient"
                   />
                 )}
-                <ExperienceTimelineCard company={company} jobRoles={jobRoles} />
+                <ExperienceTimelineCard
+                  company={company}
+                  jobRoles={jobRoles}
+                  companyLinkedIn={companyLinkedIn}
+                />
               </Fragment>
             ))}
           </div>
