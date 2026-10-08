@@ -59,8 +59,8 @@ const ccaHrOfficer: JobRoleExperience = {
 
 const monashAim: JobRoleExperience = {
   jobTitle: "Marketing Officer",
-  startDate: new Date(2023, 10),
-  endDate: new Date(2024, 7),
+  startDate: new Date(2024, 8),
+  endDate: new Date(2025, 5),
   keySkills: ["Graphic Design", "Social Media Marketing"],
   shortDescription:
     "Assisted in promotional materials for a Monash student team",
