@@ -1,4 +1,9 @@
-import { Geist, Geist_Mono, Capriola, JetBrains_Mono } from "next/font/google";
+import {
+  Commissioner,
+  Geist_Mono,
+  Capriola,
+  JetBrains_Mono,
+} from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
@@ -9,8 +14,8 @@ const jetbrainsMono = JetBrains_Mono({
   variable: "--font-mono",
 });
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const commissioner = Commissioner({
+  variable: "--font-commissioner",
   subsets: ["latin"],
 });
 
@@ -49,7 +54,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={cn(
         "h-full",
         "antialiased",
-        geistSans.variable,
+        commissioner.variable,
         geistMono.variable,
         capriola.variable,
         "font-mono",

@@ -5,11 +5,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* :root {
-  --background: #030112;
-  --foreground: #faf8ff;
-} */
-
 @utility bg-rainbow-gradient {
   background-image: linear-gradient(
     to right,
@@ -50,7 +45,7 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-geist-sans);
+  --font-commissioner: var(--font-commissioner);
   --font-mono: var(--font-mono);
   --font-heading: var(--font-mono);
   --font-accent: var(--font-capriola);
@@ -95,20 +90,25 @@
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background: #faf8ff;
+  --foreground: #474555;
+
+  --primary: #ff9ffc;
+  --primary-foreground: #b8b3e9;
+
+  --secondary: #efa6a2;
+  --secondary-foreground: #0c0830;
+
+  --muted: #aca9bb;
+  --muted-foreground: #474555;
+
+  --accent: #b5726f;
+  --accent-foreground: #faf8ff;
+
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
