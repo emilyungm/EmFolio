@@ -1,5 +1,3 @@
-"use client";
-
 import { ContactInfoFields } from "@/app/layout";
 import { TbBrandGithub, TbBrandLinkedin, TbMail } from "react-icons/tb";
 import IconButtonLink from "./IconButtonLink";

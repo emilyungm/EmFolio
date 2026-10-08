@@ -1,5 +1,3 @@
-"use client";
-
 export interface JobRoleExperience {
   jobTitle: string;
   startDate: Date;
