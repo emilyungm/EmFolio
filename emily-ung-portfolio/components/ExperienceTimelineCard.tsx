@@ -36,7 +36,7 @@ const ExperienceTimelineCard = ({
       <div className="text-surface mt-6 ml-3 space-y-6 border-l-2 border-primary pl-6">
         {sortedExperiences.map((experience) => (
           <div
-            key={`${experience.jobTitle}-${experience.startDate.getTime()}`}
+            key={`${experience.jobTitle}-${company}`}
             className="relative rounded-xl bg-primary-foreground p-5"
           >
             {/* timeline dot */}
