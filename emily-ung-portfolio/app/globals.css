@@ -32,18 +32,6 @@
   color: transparent;
 }
 
-@utility bg-matching-gradient {
-  background-image: linear-gradient(
-    to right,
-    var(--color-grad-matching-1),
-    var(--color-grad-matching-2),
-    var(--color-grad-matching-3),
-    var(--color-grad-matching-4),
-    var(--color-grad-matching-5),
-    var(--color-grad-matching-6)
-  );
-}
-
 @theme inline {
   --font-commissioner: var(--font-commissioner);
   --font-mono: var(--font-mono);
