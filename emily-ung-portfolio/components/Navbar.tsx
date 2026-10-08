@@ -1,17 +1,14 @@
 "use client";
 
 import Link from "next/link";
-// import { usePathname } from "next/navigation";
 
 interface NavbarProps {
   title: string;
 }
 
 const Navbar = ({ title }: NavbarProps) => {
-  //   const pathname = usePathname();
-
   return (
-    <header className="bg-surface">
+    <header className="bg-surface sticky top-0 z-100">
       <nav className="flex items-center justify-between mx-5 px-6 py-8">
         <div className="w-1/3">
           <Link className="text-rainbow font-accent text-4xl" href="/">
